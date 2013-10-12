@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li{
+	list-style: none;
+}
+
+body{
+	font-family: Arial;
+	font-size: 20px;
+}
+
+#todo-app{
+	width: 450px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+#todo-app h1{
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#todo-app input[type="text"]{
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	padding: 10px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#todo-app li{
+	padding: 10px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+#todo-app li.todo-done .text{
+	text-decoration: line-through;
+}	
+
+#todo-app button{
+	border: 0;
+	padding: 10px;
+	font-size: 20px;
+	background-color: #999;
+	margin-right: 10px;
+	color: #fff;
+}
