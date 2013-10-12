@@ -56,7 +56,12 @@ TodoApp.prototype = {
 	createTodo: function(text, done) {
 		var that = this;
 		var todoItem = new TodoItem(text, done);
-		this.list.appendChild(todoItem.render());
+		var li = todoItem.render();
+		this.list.appendChild(li);
+
+		setTimeout(function() {
+			li.classList.add('show');
+		}, 50);
 		
 		this.todoList.push(todoItem);
 
