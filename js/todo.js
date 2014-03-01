@@ -12,7 +12,7 @@ TodoApp.prototype = {
 
 		// title
 		this.appTitle = document.createElement('h1');
-		this.appTitle.appendChild(document.createTextNode('Todo List'));
+		this.appTitle.appendChild(document.createTextNode('JavaScript TODO'));
 
 		// todo input
 		this.input = document.createElement('input');
@@ -23,7 +23,7 @@ TodoApp.prototype = {
 		this.list = document.createElement('ul');
 		this.list.classList.add('todo-list');
 
-		this.container.appendChild(this.appTitle);
+		document.body.appendChild(this.appTitle);
 		this.container.appendChild(this.input);
 		this.container.appendChild(this.list);
 
@@ -62,7 +62,7 @@ TodoApp.prototype = {
 		setTimeout(function() {
 			li.classList.add('show');
 		}, 50);
-		
+
 		this.todoList.push(todoItem);
 
 		this.save();
@@ -108,7 +108,7 @@ TodoItem.prototype = {
 			if ( item.event === event ) {
 				item.fn.call(that);
 			}
-		})	
+		})
 	},
 
 	render: function() {
